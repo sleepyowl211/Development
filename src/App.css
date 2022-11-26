@@ -1,38 +1,63 @@
-.App {
+/* Add styling for your page here */
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fav {
+  background-color: rgb(223, 239, 239);
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fav button {
+  margin: 15px 0px;
+  border: none;
+  background-color: rgb(140, 207, 207);
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.fav .filtering input{
+  margin-bottom: 10px;
+}
+
+.animal-cards {
+  margin-right: 300px;
+}
+
+.animal {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.animal-item {
+  background-color:cornsilk;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animal-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.animal-item button {
+  border: none;
+  background-color: rgb(255, 209, 194);
+  border-radius: 5px;
+  padding: 5px 8px;
 }
