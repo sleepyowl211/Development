@@ -4,7 +4,7 @@
 Please visit the website at `https://sleepyowl211.github.io/Development/`
 
 ### Goal and Value of the Application
-This application creates an online interactive zoo where users can filter, sort, and like the animals and see their lifespan information. 
+This application creates an online interactive zoo where users can filter, sort, like and unlike the animals, and see their lifespan information. 
 
 ### Usability Principles Considered
 The user would be able to control the display sequence and conditions of the animal cards. 
