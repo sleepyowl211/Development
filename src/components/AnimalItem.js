@@ -1,11 +1,7 @@
-import {useState} from 'react';
-
 export default function AnimalItem(props) {
 
-    // let [liked, setLiked] = useState(props.liked === 1);
     const handleChange = () => {
         props.setStateOfParent(props.info["name"], props.info["lifespan"]);
-        // setLiked(!liked);
     };
     
 	return (
@@ -17,10 +13,6 @@ export default function AnimalItem(props) {
             <p>Active Time: {props.info["active_time"]}</p>
             <p>Diet: {props.info["diet"]}</p>
             <p>Lifespan: {props.info["lifespan"]}</p>
-            {/* <p>Min Length: {props.info["length_min"]}</p>
-            <p>Max Length: {props.info["length_max"]}</p>
-            <p>Min Weight: {props.info["weight_min"]}</p>
-            <p>Max Weight: {props.info["weight_max"]}</p> */}
             <button onClick={() => handleChange()}>{props.liked === 1 ? "Unlike" : "Like"}</button>
         </div>
 	);

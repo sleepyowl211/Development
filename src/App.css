@@ -1,5 +1,4 @@
 /* Add styling for your page here */
-
 h1 {
   text-align: center;
 }
@@ -21,16 +20,16 @@ button:hover {
   padding-left: 20px;
 }
 
-.fav button {
+.fav input{
+  margin-bottom: 10px;
+}
+
+#reset-btn {
   margin: 15px 0px;
   border: none;
   background-color: rgb(140, 207, 207);
   border-radius: 5px;
   padding: 5px 8px;
-}
-
-.fav .filtering input{
-  margin-bottom: 10px;
 }
 
 .animal-cards {

@@ -86,31 +86,33 @@ function App() {
       </div>
 
       <div className="fav">
-        <div className="sorting">
-          <h3>Sort By</h3>
-          <select defaultValue={'default'} onChange={(e) => setSortMethod(e.target.value)}>
-            <option value="default"> Default </option>
-            <option value="ascending"> Lifespan: Ascending </option>
-            <option value="descending"> Lifespan: Descending </option>
-          </select>
-        </div>
-        <div className="filtering">
-          <h3>Animal Type</h3>
-          <input type="checkbox" value="bird" onClick={() => updateFilter("Bird", "animal_type")}/>
-          <label> Bird </label><br/>
-          <input type="checkbox" value="mammal" onClick={() => updateFilter("Mammal", "animal_type")}/> 
-          <label> Mammal </label><br/>
-          <input type="checkbox" value="reptile" onClick={() => updateFilter("Reptile", "animal_type")}/> 
-          <label> Reptile </label><br/>
-          <input type="checkbox" value="marsupial" onClick={() => updateFilter("Marsupial", "animal_type")}/> 
-          <label> Marsupial </label><br/>
-          <h3>Active Time</h3>
-          <input type="checkbox" value="diurnal" onClick={() => updateFilter("Diurnal", "active_time")}/> 
-          <label> Diurnal </label><br/>
-          <input type="checkbox" value="nocturnal" onClick={() => updateFilter("Nocturnal", "active_time")}/> 
-          <label> Nocturnal </label><br/>
-        </div>
-        <button onClick={() => resetPage()}> Reset </button>
+        <form>
+          <div className="sorting">
+            <h3>Sort By</h3>
+            <select defaultValue={'default'} onChange={(e) => setSortMethod(e.target.value)}>
+              <option value="default"> Default </option>
+              <option value="ascending"> Lifespan: Ascending </option>
+              <option value="descending"> Lifespan: Descending </option>
+            </select>
+          </div>
+          <div className="filtering">
+            <h3>Animal Type</h3>
+            <input type="checkbox" value="bird" onClick={() => updateFilter("Bird", "animal_type")}/>
+            <label> Bird </label><br/>
+            <input type="checkbox" value="mammal" onClick={() => updateFilter("Mammal", "animal_type")}/> 
+            <label> Mammal </label><br/>
+            <input type="checkbox" value="reptile" onClick={() => updateFilter("Reptile", "animal_type")}/> 
+            <label> Reptile </label><br/>
+            <input type="checkbox" value="marsupial" onClick={() => updateFilter("Marsupial", "animal_type")}/> 
+            <label> Marsupial </label><br/>
+            <h3>Active Time</h3>
+            <input type="checkbox" value="diurnal" onClick={() => updateFilter("Diurnal", "active_time")}/> 
+            <label> Diurnal </label><br/>
+            <input type="checkbox" value="nocturnal" onClick={() => updateFilter("Nocturnal", "active_time")}/> 
+            <label> Nocturnal </label><br/>
+          </div>
+          <input id="reset-btn" type="reset" onClick={() => resetPage()} value="Reset"></input>
+        </form>
         <div>
           <h3>Favorites</h3>
           <ul>
